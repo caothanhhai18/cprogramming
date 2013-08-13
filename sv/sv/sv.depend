@@ -1,6 +1,1 @@
 # depslib dependency file v1.0
-1376338693 source:/home/mrbongdem/Documents/linux/c++/sv/sv/main.c
-	<stdio.h>
-	<stdlib.h>
-	<string.h>
-

@@ -51,9 +51,17 @@ void insert_pos(int pos){
     struct sv *temp,*ptr;
     int i;
     temp = (struct sv *)malloc(sizeof(struct sv));
-    ptr=head;
+
     for(i=0;i<pos;i++){
-        ptr=ptr->link;
+
+        if(i==0)
+        {
+          ptr=head;
+        }
+        else{
+            ptr=ptr->link;
+        }
+
     }
     printf("nhap tensv :\n");
     scanf("%s",&(temp->tensv));
@@ -69,6 +77,7 @@ void create_lk(int no){
     struct sv *temp;
     int i;
     temp = (struct sv *)malloc(sizeof(struct sv));
+
     for(i=0;i<no;i++){
         if(head==NULL){
         printf("nhap tensv thu %d :\n",i);
@@ -97,8 +106,8 @@ print_lk(){
 
 int main()
 {
-    create_lk(2);
-    //insert_begin();
+  create_lk(3);
+  //  insert_begin();
     insert_pos(1);
     print_lk();
 
