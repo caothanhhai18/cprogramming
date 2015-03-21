@@ -1,8 +1,0 @@
-<RCC>
-    <qresource prefix="/">
-        <file>main.qml</file>
-        <file>MainForm.ui.qml</file>
-        <file>Content/StockListModel.qml</file>
-        <file>Content/StockListView.qml</file>
-    </qresource>
-</RCC>
